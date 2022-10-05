@@ -7,7 +7,7 @@ Write special charcters only inside of quotes-->'', ""
 \  -->escape sysmbol
 \a -->alert sound
 
-##############variable#############
+###################variable#############
 A variable is nothing but a reserved but a reserved mermory location to store values.
 ##declare variable
 x=10
@@ -95,7 +95,19 @@ True <class 'bool'>
 False <class 'bool'>
 
 #########Pirnt with variable(s) and strings(s)########
-
+##input 
+#x=3;y=5.7;lang_name="python scripting"
+x=3
+y=5.7
+lang_name="python scripting"
+print(x,y,lang_name)
+print(f"{x},{y},{lang_name}")
+print(f"the value of x is={x}\nthe value of y is={y}")
+##output
+3 5.7 python scripting
+3,5.7,python scripting
+the value of x is=3
+the value of y is=5.7
 ############input and output statement#################
 ##input
 #simple addition cal
@@ -187,8 +199,7 @@ Output
 Gee
 ek
 !seGrf
-
-Note:-
+Note:-    
 1.String are immutable and it cannot changed once it has been assigned.
 2.We can simply reassgin different strings to the same 
 
@@ -215,5 +226,260 @@ print(full_name_2)
 tdhanapal
 t dhanapal
 t dhanapal is from tirupati
-#################
 
+################Case Conversion operation on strings##################
+##input
+my_string="Python Scripting"
+my_string_lower=my_string.lower()
+print(my_string_lower)
+print(my_string.lower())
+print(my_string.upper())
+print(my_string.swapcase())
+print(my_string.title())
+print(my_string.capitalize())
+print(my_string.casefold())
+#print(dir(my_string))
+
+##output
+python scripting
+python scripting
+PYTHON SCRIPTING
+pYTHON sCRIPTING
+Python Scripting
+Python scripting
+python scripting
+#############Boolean operation on strings################
+##input
+my_string="Python Scripting"
+my_string_lower=my_string.lower()
+print(my_string_lower)
+print(my_string.startswith('P'))
+print(my_string.startswith('Pyt'))
+print(my_string.endswith('ing'))
+print(my_string.istitle())
+print(my_string.islower())
+print(my_string.isupper())
+print(my_string.isspace())
+#print(dir(my_string))
+##output
+ython scripting
+True
+True
+True
+True
+False
+False
+False
+###############join, center and zfill string operation#######
+1. join string
+##input
+x="python"
+y="-".join(x)
+print(y)
+print(x)
+print("*".join(x))
+print("\n".join(x))
+##output
+p-y-t-h-o-n
+python
+p*y*t*h*o*n
+p
+y
+t
+h
+o
+n
+2. center string
+##input
+x="python"
+y="python scritping"
+z="learn python scripting"
+print(x.center(20))
+print(f"{x.center(20)}\n{y.center(20)}\n{z.center(20)}")
+##output
+python       
+       python       
+  python scritping  
+learn python scripting
+3. Zfill string
+##input
+x="python"
+y="python scritping"
+print(x.zfill(10))
+print(y.zfill(20))
+##output
+0000python
+0000python scritping
+#################Strip and split operation on strings##############
+1. striping on strings
+##input
+x="python is easy"
+y="python scritping"
+print(x.strip())
+print(y.strip('p')) # It will delete p" in start or ending
+print(y.strip('g')) # It will delete "g" in start or ending
+print(x.strip('easy')) # It will delete "easy" in start or ending
+##output
+ython is easy
+ython scritping
+python scritpin
+python is  
+
+2. spliting on strings
+##input 
+x="python scripting is easy"
+##split
+print(x.split()) ##here space is variable that will sperate words 
+print(x.split('is')) ##here is the  variable that will sperate words
+##output
+['python', 'scripting', 'is', 'easy']
+['python scripting ', ' easy'] 
+
+##########count, index and find operations on strings################
+##input
+x="python scripting is easy and  is popular language "
+##split
+print(x.count('p'))
+print(x.index('is')
+print(x.find('p'))
+print(x.find('p', 2))
+print(x.find(-z))
+##output
+4
+17
+0
+-1
+-1
+#############Data structure of python################
+Data structure are used to store a collection of data.
+There are four buil-in data structures. they are 
+1. List--->[]
+2. Tuple--->()
+3. Dictionary--->{} with kay value pair
+4. set--->{}
+
+1. list data type
+##input
+x=5
+my_value=[3,4,5,'python','devops',5.6]
+print(len(my_value),type(my_value))
+print(my_value[0])
+print(my_value[4])
+print(my_value[-1])
+print(my_value[3][1])
+print(my_value[:])
+print(my_value[0:])
+print(my_value[1:4])
+my_value[0]=30 ## modify the value of 3 as 30
+print(my_value)
+
+my_list=[3,5,2,7,3,8,5,9]
+print(my_list.index(5))
+print(my_list.index(5,2))
+print(my_list.count(5))
+#print(my_list.index(10))
+print(my_list)
+my_list.append(30) ##append  value add in only last index
+print(my_list)
+my_list.insert(1,45) ##insert we can add value wherever you want like in 1st index
+print(my_list)
+my_list.remove(9) ##modify operation doesn't required print
+print(my_list)
+print(my_list.pop()) ##pop will delete by default last index value or number
+print(my_list.pop(4)) 
+print(my_list)
+my_list.reverse() ##reverse the values in list
+print(my_list) 
+my_list.clear() ##modify operation doesn't required print
+print(my_list)
+##output
+6 <class 'list'>
+3
+devops
+5.6
+y
+[3, 4, 5, 'python', 'devops', 5.6]
+[3, 4, 5, 'python', 'devops', 5.6]
+[4, 5, 'python']
+[30, 4, 5, 'python', 'devops', 5.6]
+1
+6
+2
+[3, 5, 2, 7, 3, 8, 5, 9]
+[3, 5, 2, 7, 3, 8, 5, 9, 30]
+[3, 45, 5, 2, 7, 3, 8, 5, 9, 30]
+[3, 45, 5, 2, 7, 3, 8, 5, 30]
+30
+7
+[3, 45, 5, 2, 3, 8, 5]
+[5, 8, 3, 2, 5, 45, 3]
+[]
+
+2.tuple data type
+##input
+#Tuple and strings are immutable
+#Tuple and strings are immutable
+my_empty=()
+my_tuple=(3,4,[5,6,7],8,9,10)
+print(my_tuple)
+print(bool(my_tuple))
+print(bool(my_empty))
+print(my_tuple[2:]) #from 2nd index to last index
+print(my_tuple[:2]) ##up to 2nd index 
+print(my_tuple[2][1],type(my_tuple))
+len(my_tuple)
+##output
+(3, 4, [5, 6, 7], 8, 9, 10)
+True
+False
+([5, 6, 7], 8, 9, 10)
+(3, 4)
+6 <class 'tuple'>
+
+3. dictionary data structure 
+##input
+#Dictionary is also map in terraform
+#Dictionary type is key value represnation
+my_dict={'name':'dhanapal', 'age':24, 'job':'software',  'plcae':'banglore'} 
+print(my_dict['name'], type(my_dict))
+print(my_dict.get('age'))
+print(my_dict)
+#my_dict.clear()
+my_dict['age']=25 #adding or replacing the age value
+my_dict['designation']='Linux' #adding the value
+print(my_dict)
+print(my_dict.keys()) ##here it will list keys only
+print(my_dict.values())
+print(my_dict.items())
+y=my_dict.copy() ##copiny my_dict to y variable
+print(id(y), id(my_dict))
+print(y)
+my_new_dict={'company':"Zee"}
+my_dict.update(my_new_dict) ##updating the new variable into older variable of my_new_dict
+print(my_dict)
+my_dict.pop('company') ##pop will delete company key value
+my_dict.popitem() ##pop will delete default last item
+print(my_dict)
+keys=['a','e','i','o','u'] 
+new_dict=dict.fromkeys(keys) ##conert the list into dictonary
+print(new_dict)
+new_dict['a']="first alpha"
+print(new_dict)
+##output
+dhanapal <class 'dict'>
+24
+{'name': 'dhanapal', 'age': 24, 'job': 'software', 'plcae': 'banglore'}
+{'name': 'dhanapal', 'age': 25, 'job': 'software', 'plcae': 'banglore', 'designation': 'Linux'}
+dict_keys(['name', 'age', 'job', 'plcae', 'designation'])
+dict_values(['dhanapal', 25, 'software', 'banglore', 'Linux'])
+dict_items([('name', 'dhanapal'), ('age', 25), ('job', 'software'), ('plcae', 'banglore'), ('designation', 'Linux')])
+140347630034176 140347630034048
+{'name': 'dhanapal', 'age': 25, 'job': 'software', 'plcae': 'banglore', 'designation': 'Linux'}
+{'name': 'dhanapal', 'age': 25, 'job': 'software', 'plcae': 'banglore', 'designation': 'Linux', 'company': 'Zee'}
+{'name': 'dhanapal', 'age': 25, 'job': 'software', 'plcae': 'banglore'}
+{'a': None, 'e': None, 'i': None, 'o': None, 'u': None}
+{'a': 'first alpha', 'e': None, 'i': None, 'o': None, 'u': None}
+
+
+
+ 
