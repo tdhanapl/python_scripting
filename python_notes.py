@@ -8,7 +8,7 @@ Write special charcters only inside of quotes-->'', ""
 \a -->alert sound
 
 ###################variable#############
-A variable is nothing but a reserved but a reserved mermory location to store values.
+A variable is nothing but a reserved mermory location to store values.
 ##declare variable
 x=10
 print(x)
@@ -358,6 +358,8 @@ print(x.find(-z))
 -1
 -1
 ##############Data structure of python################
+https://tanaya.hashnode.dev/introduction-to-python-day-13-task
+
 Data structure are used to store a collection of data.
 There are four buil-in data structures. they are 
 1. List--->[]
@@ -426,7 +428,6 @@ y
 2.tuple data type
 ##input
 #Tuple and strings are immutable
-#Tuple and strings are immutable
 my_empty=()
 my_tuple=(3,4,[5,6,7],8,9,10)
 print(my_tuple)
@@ -446,7 +447,7 @@ False
 
 3. dictionary data structure 
 ##input
-#Dictionary is also map in terraform
+#Dictionary is also called as  map in terraform
 #Dictionary type is key value represnation
 my_dict={'name':'dhanapal', 'age':24, 'job':'software',  'plcae':'banglore'} 
 print(my_dict['name'], type(my_dict))
@@ -523,14 +524,14 @@ print(my_set)
 Given two variables x and y, write a Python program to swap(exchange) their values.
 ##Method-1(Using Naive approach)
 # swapping of two variables
- x = 10
+x = 10
 y = 50
  # Swapping of two variables
 # Using third variable
 temp = x
 x = y
 y = temp
- print("Value of x:", x)
+print("Value of x:", x)
 print("Value of y:", y)
 ##output
 Value of x: 50
