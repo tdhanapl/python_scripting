@@ -1,5 +1,5 @@
 - name: Create a new user and add it to sudoers
-  hosts: localhosts
+  hosts: webserver
   become: yes
   vars:
     username: gani
