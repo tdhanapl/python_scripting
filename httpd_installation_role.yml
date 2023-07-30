@@ -2,4 +2,4 @@
 - hosts: webserver
   become: true
   roles:
-   - nginx-role
+   - httpd-role
