@@ -152,7 +152,7 @@ the addition of 5 and 6 is= 11
 my_name="Narendra"
 my_job="linux admin"
 job_role="""
-I started my carrier as an admin and 
+I started my carrier as an linux admin and 
 now learning devops team
 """ 
 print(f'my name is: {my_name}\nmy_job name is :{my_job}\njob_role is :{job_role}')
@@ -556,7 +556,7 @@ The bitwise XOR operator can be used to swap two variables.
 The XOR of two numbers x and y returns a number which has all the bits as 1 wherever bits of x and y differ. For example XOR of 10 (In Binary 1010) and 5 (In Binary 0101) is 1111 and XOR of 7 (0111) and 5 (0101) is (0010).
 ##Input
 # Swapping of two variables
- x = 10
+x = 10
 y = 50
  # Swapping using xor
 x = x ^ y
